@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91048421-2"></script>
+		</script>
+        <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+        </script>
+        <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+        </script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="e9Ha7FleG9_5QxkvjlIwnLWrdE951iFWn-e4TzgjB5o" />
+        <title>Benjamin Ahn Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="backgroundChange">
+            <div id ='homePage'></div>
+        </div>
+        <div id = "backgroundChange2">
+            <div id ='homePage2'></div>
+        </div>
+
+        <div id=homePageHeightSet>
+            <div id = 'bar'>
+                <div id = 'navigationBar' class="navigationBarBar">
+                    <a href="#homePage" class = 'nb' id='homeButton'> Benjamin Ahn @ Medical School of Brown University</a>
+                    <a href="#rightContent" class = 'nb' id="linksButton">ABOUT</a>
+                    <a href="#projectTarget" class = 'nb' id="projectsButton">PROJECTS</a>
+                    <a href="#resumeTarget" class = 'nb' id="projectsButton">RESUME</a>
+                    <a href="#contactTarget" class = "nb" id="aboutButton">CONTACT</a>
+                </div>
+            </div>
+            <div id ='homePageTextContainer'>
+                <div id='homePageCenterWrapper'>
+                    <p id ='mainTextHeader'>BioBen </p>
+                    <p id = "mainTextName">Benjamin Ahn </p>
+                    <p id = 'mainTextTitle'>Computational Biologist</p>
+                    <p id = 'mainTextTitle'>Medical Student @ Brown University</p>
+                </div>
+                <div id='homeCaption'>
+                    Immunofluorescent histology image and its MATLAB computerized image <br> Original images by Benjamin Ahn
+                </div>
+            </div>
+        </div>
+
+
+        <div class = 'wrapper'>
+            <div id = 'leftContent' class="col-sm-6 col-2 one">
+                <div>
+                    <img id = 'headShot' src = "./images/Headshot_2022.jpg"></img>
+                </div>
+                <div id= 'name'>
+                    <p id='name1'> Benjamin Ahn </p>
+                    <p id='name1'> Benjamin_ahn@brown.edu </p>
+                </div>
+                <div id = 'affiliations'>
+                    <p id='affiliations1'> M.D. 2026 </p>
+                    <p id='affiliations1'> Warren Alpert Medical School @ Brown University </p>
+                    <p id='affiliations1'> B.S. Biological Sciences, Computational & Quantitative BioSci 2022 </p>
+                    <p id='affiliations1'> Georgia Institute of Technology </p>
+                </div>
+                <div id = 'researchFocus'>
+                    <p> <b>Research focus:</b> genomic, transcriptomic, and proteomic approaches to understanding cell signaling activity in the context of disease </p>
+                </div>
+                <div id = 'connectLinks'>
+                    <a href='./Ahn_Benjamin_resume2022.pdf' target="_blank" class='connectUnits'> Resume </a>
+                    <a href='https://github.com/bioben' target="_blank" class='connectUnits'> GitHub </a>
+                    <a href='https://linkedin.com/in/benjamin-a-ba074a125' target="_blank" class='connectUnits'> LinkedIn </a>
+                </div>
+            </div>
+
+            <script>
+
+    $(window).scroll(function(){
+        var height = screen.height / 1.5;
+        var pos = $(window).scrollTop();
+        if(pos < height) {
+            document.getElementById("leftContent").style.animationName ="fadeOut";
+            document.getElementById("leftContent").style.animationDuration ="0.5s";
+            document.getElementById("leftContent").style.opacity ="0";
+        }
+        else {
+            document.getElementById("leftContent").style.position="fixed";
+            document.getElementById("leftContent").style.animationName ="fadeIn";
+            document.getElementById("leftContent").style.animationDuration ="0.5s";
+            document.getElementById("leftContent").style.animationIterationCount ="1";
+            document.getElementById("leftContent").style.animationFillMode ="forward";
+            document.getElementById("leftContent").style.opacity ="1";
+        }
+        console.log(pos);
+        console.log(height);
+    });
+        </script>
+
+
+
+            <div id='rightContent' class="col-sm-8 offset-sm-2 two">
+                <div id='aboutTarget' class='subTitle'>ABOUT</div>
+                <div id='aboutWrapper'>
+                    <div id='aboutEducation'>
+                        <div id='aboutBox1' class='aboutBox'>
+                            <div class='aboutBoxTitle'>
+                                Georgia Institute of Technology
+                            </div>
+                            <div class='aboutBoxContent'>
+                                2018 - 2022 <br>
+                                B.S. Biological Sciences, GPA: 4.0 <br>
+                                Concentration: Computational & Quantitative Biology <br>
+                                Spanish Minor, Scholar, Honors Program <br>
+                            </div>
+                        </div>
+                        <div id='aboutBox2' class='aboutBox'>
+                            <div class='aboutBoxTitle'>
+                                Medical School @ Brown University
+                            </div>
+                            <div class='aboutBoxContent'>
+                                2022 - 2026 <br>
+                                M.D., Warren Alpert Medical School <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='verticalBorder'></div>
+
+                    <div id='aboutWork'>
+                        <div id='aboutBox3' class='aboutBox'>
+                            <div class='aboutBoxTitle'>
+                                Wood Lab
+                            </div>
+                            <div class='aboutBoxContent'>
+                                2018 - 2022, Dr. Levi Wood <br>
+                                Investigating neuroimmune cell activity in Alzheimer's Disease <br>
+                                John H. riddley Research Scholar <br>
+                                Presidential Undergraduate Research Award <br>
+                            </div>
+                            <div id='pubications'>
+                            </div>
+                            <div id='aboutBox4' class='aboutBox'>
+                                <div class='aboutBoxTitle'>
+                                    Ionis Pharmaceuticals
+                                </div>
+                                <div class='aboutBoxContent'>
+                                    Summer 2021, Dr. Christine Hong <br>
+                                    Developing a neurotoxic astrocyte model <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id='projectTarget'></div>
+                <div id='projectTarget' class='subTitle'>
+                    PROJECTS
+                </div>
+                <div id='projectWrapper'>
+                    <div class="scrollmenu">
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/IL34 veh indivTraj.jpg"></img>
+                            <p class='projectBoxTitle'>Single Cell ERK Signaling in Microglia </p>
+                            <p class='projectBoxContent'>MATLAB, viral transduction, live cell imaging</p>
+                        </div>
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/20200205_514_Iba1_slide_1_1_CA2-ApoTomeRAWConvert_ortho2_equalized.png"></img>
+                            <p class='projectBoxTitle'>3D Microglia Morphology Analysis to Assess Proinflammatory Dynamics</p>
+                            <p class='projectBoxContent'>MATLAB, ImageJ, multivariate analysis, fluorescent microscopy, animal work </p>
+                        </div>
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/heatMap_luminex.png"></img>
+                            <p class='projectBoxTitle'>Proteomic analysis of ERK microglial response</p>
+                            <p class='projectBoxContent'>R, multiplex immunofluorescent assays</p>
+                        </div>
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/hemeImagingProj.jpg"></img>
+                            <p class='projectBoxTitle'>Tiled fluorescent microscopic image correction </p>
+                            <p class='projectBoxContent'>MATLAB, ImageJ, histology, lin alg </p>
+                        </div>
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/rsz_1ionisdata_whiteout.gif"></img>
+                            <p class='projectBoxTitle'>Transcriptomic approach to developing a toxic astrocyte model </p>
+                            <p class='projectBoxContent'>Python, R, genomic/transcriptomics, multivariate analysis, cell culture </p>
+                        </div>
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/poojaProject.png"></img>
+                            <p class='projectBoxTitle'>Microglial Response to Traumatic Brain Injury</p>
+                            <p class='projectBoxContent'>MATLAB, R, multivariate analysis</p>
+                        </div>
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/rsz_microgliapic.jpg"></img>
+                            <p class='projectBoxTitle'>Quantifying Temporal Proinflammatory Microglial Dynamics</p>
+                            <p class='projectBoxContent'>Python, R, genomic/transcriptomics, cell culture </p>
+                        </div>
+                    </div>
+                    <div class="scrollmenu">
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/CZItoolbox.png"></img>
+                            <p class='projectBoxTitle'>CZI ToolBox </p>
+                            <p class='projectBoxContent'>Self-developed set of programs to manipulate CZI imaging files</p>
+                        </div>
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/ecologyPic.jpeg"></img>
+                            <p class='projectBoxTitle'>Multigroup comparison of plant sprout growth</p>
+                            <p class='projectBoxContent'>R, ANOVA</p>
+                        </div>
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/noteCloneLogo.jpg"></img>
+                            <p class='projectBoxTitle'>Note Cloner </p>
+                            <p class='projectBoxContent'>Auto convert YouTube to mp3, JavaFX</p>
+                        </div>
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/mp3_picture.png"></img>
+                            <p class='projectBoxTitle'>MP3 Player </p>
+                            <p class='projectBoxContent'>Self-developed desktop MP3 player, JavaFX</p>
+                        </div>
+                        <div class='projectBox'>
+                            <img class='projectBoxImage' src="./images/mentalWealth.png"></img>
+                            <p class='projectBoxTitle'>Mental Wealth Developer </p>
+                            <p class='projectBoxContent'>Beta-version app quiz game, HTML/CSS/JavaScript</p>
+                        </div>
+                    </div>
+
+
+                    <div class='resumeSubTitle'>
+                        Published/Presented Work
+                    </div>
+                    <ol>
+                        <li><i><b>Ahn, B.</i></b>, Wood, L. "Understanding Single-cell ERK Temporal Dynamics in Microglia", oral, Georgia Tech Research Symposium (2022) </li>
+                        <li>Bitarafan, S., <b><i>Ahn, B.</b></i>, Sherrard, B., Rangaraju, S., Wood, L., "CSF1R Agonists Elicit Distinct ERK Activation and Heterogeneity Profiles in Homeostatic and Diseased Microlgia", poster, Biomedical Engeering Society (2022) </li>
+                        <li>Datta Roy, P., <b><i>Ahn, B.</b></i>, Wood, L., LaPlaca, M. "Mild repetitive traumatic brain injury induces change in microglial morphology", National Neurotrama Society (2022) </li>
+                        <li><i><b>Ahn, B.</b></i>, Weinstock, L., Wood, L. “Microglia Pro-inflammatory Dynamics in Alzheimer’s Disease”, poster, Biomedical Engineering Society (2021) </li>
+                        <li>Bitarafan, S., <b><i>Ahn, B.</i></b>, Chen, M., Rangaraju, S., Wood, L., “Distinct Patterns of MAPK Pathway Activation in Homeostatic and Pro-inflammatory Microglia”, oral, Biomedical Engineering Society (2021) </li>
+                        <li><i><b>Ahn, B.</i></b>, Weinstock, L., Wood, L. “Temporal Control of Microglia Activation with Exogenous Inflammatory Factors in Alzheimer’s Diseased Mice”, oral, Georgia Tech Research Symposium (2021) </li>
+                        <li>Bitarafan, S., Ramesha, S., Xiao, H., <b><i>Ahn, B.</i></b>, Rangaraju, S., Wood, L. "Systemic inflammation elicits distinct brain immune signaling dynamics in female and male mice with AD pathology", poster, Alzheimer's Association International Conference (2021) </li>
+
+                    </ol>
+                </div>
+
+                <div id='resumeTarget'></div>
+                <div class='subTitle'>
+                    RESUME
+                </div>
+                <div id='resumeWrapper'>
+                    <div class='resumeSectionWrapper'>
+                        <div class='resumeSubTitle'>
+                            EDUCATION
+                        </div>
+                        <div class='locationTitle'>
+                            Warren Alpert Medical School of Brown University
+                        </div>
+                        <div class='resumeContent'>
+                            First year medical student, Class of 2026
+                        </div>
+                        <div class='locationTitle'>
+                            Georgia Institute of Technology
+                        </div>
+                        <div class='resumeContent'>
+                            GPA: 4.0, Bachelor of Science in Biological Sciences (Computational & Quantitative Biology), Spanish Minor, 2022 <br>
+                            Gold Scholar - top 2% merit scholars program, Honors Program, Senior Research Thesis <br>
+                        </div>
+                    </div>
+
+                    <div class='resumeSectionWrapper'>
+                        <div class='resumeSubTitle'>
+                            WORK EXPERIENCE
+                        </div>
+                        <div class='locationTitle'>
+                            Georgia Institute of Technology
+                        </div>
+                        <div class='resumeContent'>
+                            Neuroinflammation Researcher, 2018 - 2022 <br>
+                            Understanding and modulating neuroimmune cell activity using in vitro & in vivo models in Alzheimer's Disease <br>
+                            Presidential Undergraduate Research Award (2019, 2022) <br>
+                            Presidential Undergraduate Research Travel Grant Award (2021) <br>
+                            Skills: immunofluorescent staining, histology, lentiviral vectors, flow cytometry, single-cell techniques <br>
+                            Computational: image processing, quantitative fluorescent microscopy, data analysis/viz
+
+                        </div>
+                        <div class='locationTitle'>
+                            Ionis Pharmaceuticals
+                        </div>
+                        <div class='resumeContent'>
+                            Neuro Drug Discovery Intern, Summer 2021
+                        </div>
+                        <div class='locationTitle'>
+                            Northside Hospital
+                        </div>
+                        <div class='resumeContent'>
+                            Anesthesia Technician, Summer 2018, 2019
+                        </div>
+                    </div>
+
+                    <div class='resumeSectionWrapper'>
+                        <div class='resumeSubTitle'>
+                            Lab & Technical Skills
+                        </div>
+                        <div class='locationTitle'>
+                            Wet lab
+                        </div>
+                        <div class='resumeContent'>
+                            Cell culture, immunofluorescent assays, viral transduction, live cell imaging, fluorescent imaging, free-floating histology, qRT-PCR, proteomic multiplex assays, genomic libraries
+                        </div>
+                        <div class='locationTitle'>
+                            Computational
+                        </div>
+                        <div class='resumeContent'>
+                            MATLAB, Python, RStudio, Java, ImageJ, Linux, BLAST, HTML/CSS
+                        </div>
+                        <div class='resumeContent'>
+                            Multivariate statistics, Hypothesis testing statistics, Image Processing, Quantitative Fluorescent Imaging, Gene set analysis
+                        </div>
+                    </div>
+
+                    <div class='resumeSectionWrapper'>
+                        <div class='resumeSubTitle'>
+                            LEADERSHIP & EXTRA-CURRICULAR
+                        </div>
+                        <div class='locationTitle'>
+                            Georgia Tech Department of Housing
+                        </div>
+                        <div class='resumeContent'>
+                            Resident Assistant, 2019 - 2022
+                        </div>
+                        <div class='locationTitle'>
+                            Gold Scholar Ambassadors
+                        </div>
+                        <div class='resumeContent'>
+                            Committee Chair, 2020 - 2022
+                        </div>
+                        <div class='locationTitle'>
+                            Consultorio Medico Hispano
+                        </div>
+                        <div class='resumeContent'>
+                            Clinical Assistant, 2015 - 2022
+                        </div>
+                    </div>
+                </div>
+
+                <div id='contactTarget'></div>
+                <div class='subTitle'>
+                    CONTACT
+                </div>
+                <div id= 'name2'>
+                    <p id='name1'> Benjamin Ahn </p>
+                    <p id='name1'> Benjamin_ahn@brown.edu </p>
+                </div>
+
+            </div> <!---rightContent-->
+        </div>
+        <div>
+            <div id = 'footerBar'>
+                Original Web Development by Benjamin Ahn, Aug 2022
+            </div>
+        </div>
+
+    </body>
+</html>

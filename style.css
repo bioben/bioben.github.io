@@ -1,0 +1,594 @@
+@media (max-width: 600px) {
+    html, body {
+        margin : 0;
+        margin-top : 0;
+        color : black;
+        background-color: white;
+        scroll-behavior: smooth;
+        font-family : Inter;
+        height : 100%;
+        padding : 0%;
+    }
+    section {
+        margin : 0;
+        height : 100%;
+    }
+
+    /*home page*/
+    #homePage2 {
+        width : 100%;
+        height : 100%;
+        color : white;
+        font-family : Inter;
+        position : absolute;
+        background-image : url("./images/20200205_514_Iba1_slide_1_1_CA2-ApoTomeRAWConvert_ortho2_equalized_cropped.jpg");
+        background-size: cover;
+        background-position : center;
+        z-index: 800; /*layer items so that the leftBarAbout is under home page*/
+    }
+    #homePage {
+        width : 100%;
+        height : 100%;
+        color : white;
+        font-family : Inter;
+        position : absolute;
+        background-image : url("./images/MIP_20200205_514_Iba1_slide_1_1_CA200_regular_rotated.jpg");
+        background-size: cover;
+        background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(myimage."./images/MIP_20200205_514_Iba1_slide_1_1_CA200_regular_rotated.jpg");
+        background-position : center;
+        z-index: 800; /*layer items so that the leftBarAbout is under home page*/
+    }
+    @keyframes fadeInOut {
+        0%   {opacity : 1;}
+        10%  {opacity : 1;}
+        50%  {opacity : 0.2;}
+        90%  {opacity : 1;}
+        100% {opacity : 1;}
+    }
+
+    @keyframes fadeInOut2 {
+        0%   {opacity : 0.2;}
+        45%  {opacity : 1;}
+        55%  {opacity : 1;}
+        100% {opacity : 0.2;}
+    }
+
+    @keyframes fadeIn {
+      0%   {opacity : 0;}
+      50%  {opacity : 0.5;}
+      100% {opacity : 1;}
+    }
+    @keyframes fadeOut {
+      0%   {opacity : 1;}
+      50%  {opacity : 0.5;}
+      100% {opacity : 0;}
+    }
+
+    #backgroundChange {
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    }
+
+    #backgroundChange2 {
+    animation-name: fadeInOut2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    }
+
+    #homePageTextContainer {
+        color : white;
+        height : 100%;
+        position : relative;
+        font-family : Inter;
+        z-index: 9998;
+
+    }
+    #homePageHeightSet {
+        height :100%;
+    }
+    #homePageCenterWrapper {
+        position : relative;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+    #mainTextHeader {
+        font-size : 25vw;
+        margin-top : 0%;
+        margin-bottom : 0%;
+        font-weight : bold;
+    }
+    #mainTextName {
+        font-size : 5vw;
+        margin-top : 0%;
+        margin-bottom : 0%;
+    }
+    #mainTextTitle {
+        font-size : 5vw;
+        margin-bottom : 0%;
+    }
+    #navigationBar {
+        overflow : hidden;
+        position : fixed;
+        font-family : Inter;
+        float : center;
+        letter-spacing: 0.2vw;
+        padding-top : 1%;
+        padding-bottom : 1%;
+        width : 100%;
+        background-image : url("./images/coverPage.png");
+        background-size : cover;
+        z-index: 9999; /*move navBar above all other content*/
+    }
+    #rightNavigationBar {
+        position : relative;
+        font-size : 200%;
+        font-family : Inter;
+        letter-spacing: 0.2vw;
+        float : center;
+        padding-top : 1%;
+        padding-bottom : 1%;
+    }
+    .navigationButton {
+        position : relative;
+        border: none;
+        color : white;
+        text-decoration: none;
+        text-align : center;
+        float: left;
+        padding-left : 100%;
+        display : inline-block;
+        margin-top : 0%;
+        margin-bottom : 0%;
+        text-align: center;
+    }
+    .nb {
+        color : white;
+        border : none;
+        width : auto;
+        font-size: 3vw;
+        text-decoration: none;
+        padding-left: .5vw;
+        padding-right : .5vw;
+        margin-top : 0%;
+        margin-bottom : 0%;
+    }
+    .nb:hover {
+        color : black;
+        background-color: white;
+        border : none;
+        width : auto;
+        font-size: 3vw;
+        text-decoration: none;
+        padding-left: .5vw;
+        padding-right : .5vw;
+        margin-top : 0%;
+        margin-bottom : 0%;
+        transition: 1s;
+    }
+    #homeCaption {
+        position : absolute;
+        float : right;
+        text-align : right;
+        font-size : 1.5vw;
+        font-style : italic;
+        bottom : 0;
+        right : 0;
+        padding-right : 1%;
+    }
+
+
+}
+
+
+/*TOP SECTION*/
+@media only screen and (min-width: 600px){
+    html, body {
+        margin : 0;
+        margin-top : 0;
+        color : black;
+        background-color: white;
+        scroll-behavior: smooth;
+        font-family : Inter;
+        height : 100%;
+        padding : 0%;
+    }
+    section {
+        margin : 0;
+        height : 100%;
+    }
+
+    /*home page*/
+    #homePage2 {
+        width : 100%;
+        height : 100%;
+        color : white;
+        font-family : Inter;
+        position : absolute;
+        background-image : url("./images/20200205_514_Iba1_slide_1_1_CA2-ApoTomeRAWConvert_ortho2_equalized_cropped.jpg");
+        background-size: cover;
+        background-position : center;
+        z-index: 800; /*layer items so that the leftBarAbout is under home page*/
+    }
+    #homePage {
+        width : 100%;
+        height : 100%;
+        color : white;
+        font-family : Inter;
+        position : absolute;
+        background-image : url("./images/MIP_20200205_514_Iba1_slide_1_1_CA200_regular_rotated.jpg");
+        background-size: cover;
+        background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(myimage."./images/MIP_20200205_514_Iba1_slide_1_1_CA200_regular_rotated.jpg");
+        background-position : center;
+        z-index: 800; /*layer items so that the leftBarAbout is under home page*/
+    }
+
+    @keyframes fadeInOut {
+        0%   {opacity : 1;}
+        10%  {opacity : 1;}
+        50%  {opacity : 0.2;}
+        90%  {opacity : 1;}
+        100% {opacity : 1;}
+    }
+
+    @keyframes fadeInOut2 {
+        0%   {opacity : 0.2;}
+        45%  {opacity : 1;}
+        55%  {opacity : 1;}
+        100% {opacity : 0.2;}
+    }
+
+    @keyframes fadeIn {
+      0%   {opacity : 0;}
+      50%  {opacity : 0.5;}
+      100% {opacity : 1;}
+    }
+    @keyframes fadeOut {
+      0%   {opacity : 1;}
+      50%  {opacity : 0.5;}
+      100% {opacity : 0;}
+    }
+
+    #backgroundChange {
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    }
+
+    #backgroundChange2 {
+    animation-name: fadeInOut2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    }
+
+    #homePageTextContainer {
+        color : white;
+        height : 100%;
+        position : relative;
+        padding-left : 10%;
+        font-family : Inter;
+        z-index: 9998;
+
+    }
+    #homePageHeightSet {
+        height :100%;
+    }
+    #homePageCenterWrapper {
+        position : relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #mainTextHeader {
+        font-size : 10vw;
+        margin-top : 0%;
+        margin-bottom : 0%;
+        font-weight : bold;
+        margin-left : -0.5%;
+    }
+    #mainTextName {
+        font-size : 3vw;
+        margin-top : 0%;
+        margin-bottom : 0%;
+    }
+    #mainTextTitle {
+        font-size : 3vw;
+        margin-top : -1%;
+        margin-bottom : 0%;
+    }
+    #navigationBar {
+        overflow : hidden;
+        position : fixed;
+        font-size : 200%;
+        font-family : Inter;
+        letter-spacing: 0.2vw;
+        padding-left : 2%;
+        padding-top : 1%;
+        padding-bottom : 1%;
+        width : 100%;
+        background-image : url("./images/coverPage.png");
+        background-size : cover;
+        z-index: 9999; /*move navBar above all other content*/
+    }
+    #rightNavigationBar {
+        position : relative;
+        font-size : 200%;
+        font-family : Inter;
+        letter-spacing: 0.2vw;
+        float : right;
+        width : 40%;
+        padding-top : 1%;
+        padding-bottom : 1%;
+    }
+    .navigationButton {
+        position : relative;
+        border: none;
+        color : white;
+        text-decoration: none;
+        text-align : center;
+        float: left;
+        padding-left : 100%;
+        display : inline-block;
+        margin-top : 0%;
+        margin-bottom : 0%;
+    }
+    .nb {
+        color : white;
+        border : none;
+        width : auto;
+        font-size: 1.5vw;
+        text-decoration: none;
+        padding-left: .5vw;
+        padding-right : .5vw;
+        margin-top : 0%;
+        margin-bottom : 0%;
+    }
+    .nb:hover {
+        color : black;
+        background-color: white;
+        border : none;
+        width : auto;
+        font-size: 1.5vw;
+        text-decoration: none;
+        padding-left: .5vw;
+        padding-right : .5vw;
+        margin-top : 0%;
+        margin-bottom : 0%;
+        transition: 1s;
+    }
+    .nb {
+        margin-left : 2%;
+        position : relative;
+        color : white;
+        border : none;
+        max-width : 100%;
+        text-decoration : none;
+        float : left;
+    }
+
+    #homeCaption {
+        position : absolute;
+        float : right;
+        text-align : right;
+        font-size : 1.5vw;
+        font-style : italic;
+        bottom : 0;
+        right : 0;
+        padding-right : 1%;
+    }
+
+    #subHeader {
+        position : relative;
+        color : black;
+        text-align: center;
+        padding-top : 5%;
+    }
+
+    .wrapper {
+        position : relative;
+        height : 100%;
+        width : 100%;
+    }
+
+    #leftContent {
+        top: 50%;
+        transform: translateY(-50%);
+        text-align : center;
+        width : 30%;
+    }
+    #headShot {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        border-radius : 50%;
+    }
+    #name {
+        padding-top : 5%;
+        padding-bottom : 5%;
+    }
+    #name1 {
+        font-size : 1.5vw;
+        margin : 0%;
+    }
+    #affiliations {
+        font-size : 1vw;
+        text-align : left;
+        padding-left : 10%;
+        margin-bottom : 3%;
+    }
+    #affiliations1 {
+        margin : 0%;
+    }
+    #researchFocus {
+        font-size : 1vw;
+        padding-left : 10%;
+        text-align : left;
+    }
+    #connectLinks {
+        font-size : 1vw;
+        padding-top : 5%;
+        position : relative;
+        border: none;
+        text-decoration: none;
+        text-align : center;
+        display : inline-block;
+        width : 100%; /*100% of the width of the leftAbout*/
+    }
+    .connectUnits {
+        text-align: center;
+        margin-left : 5%;
+        margin-right : 5%;
+        padding : 2%;
+        border : none;
+        text-decoration: none;
+        color : black;
+        border-style : solid;
+        border-color : black;
+        border-width: .1vw;
+    }
+    .connectUnits:hover {
+        text-align: center;
+        margin-left : 5%;
+        margin-right : 5%;
+        padding: 2%;
+        border : none;
+        text-decoration: none;
+        color : white;
+        background-color : black;
+        border-style : solid;
+        border-color : black;
+        border-width: .1vw;
+        transition: 1s;
+    }
+
+    #rightContent {
+        position : relative;
+        overflow : auto;
+        float : right;
+        text-align : center;
+        width : 100%;
+        color : black;
+        height : auto;
+    }
+    #aboutWrapper {
+        display : flex;
+    }
+
+    .verticalBorder {
+        border-left : 0.5vw solid black;
+        height : 30vw;
+    }
+
+    .aboutBox {
+        text-align : left;
+        font-size : 1vw;
+        width : 100%;
+        margin-top : 10%;
+    }
+    .aboutBoxTitle {
+        font-weight : bold;
+        font-size: 1.5vw;
+    }
+    #aboutEducation {
+        float : left;
+        display : inline-block;
+        position : relative;
+        width : 50%;
+    }
+    #aboutWork {
+        float : right;
+        display : inline-block;
+        position : relative;
+        margin-left : 5%;
+        width : 45%;
+    }
+    .subTitle {
+        text-align : center;
+        font-size: 3vw;
+        padding-bottom : 3%;
+        padding-top : 3%;
+    }
+
+    div.scrollmenu {
+        display : flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .projectBox {
+        flex: 0 0 auto;
+        height : 50%;
+        width : 30%;
+        align-items: center;
+        border-width: medium;
+        border-color : black;
+        border : solid;
+        float : left;
+        margin : 2%;
+    }
+    .projectBox:hover {
+        background-color : black;
+        color : white;
+        transition: 1s;
+    }
+    .projectBoxTitle {
+        font-size: 1vw;
+        font-weight: bold;
+    }
+    .projectBoxImage{
+        width: 10vw;
+        height : 10vw;
+        object-fit: scale-down;
+    }
+    .projectBoxContent {
+        font-size: 1vw;
+    }
+
+
+    #resumeWrapper {
+        text-align: left;
+    }
+    .resumeSectionWrapper {
+        margin-bottom : 3%;
+    }
+    .resumeSubTitle {
+        padding-top : 5%;
+        font-weight : bold;
+        font-size : 1.5vw;
+        text-transform : uppercase;
+    }
+    ol {
+        font-size: 1vw;
+        text-align: left;
+    }
+    .locationTitle {
+        text-transform: uppercase;
+        font-weight : bold;
+        font-size: 1vw;
+    }
+    .resumeContent {
+        padding-bottom : 1%;
+        font-size : 1vw;
+    }
+    #name2 {
+        margin-top : -2%;
+        margin-bottom : 2%;
+    }
+
+    #footerBar {
+        position : relative;
+        display : inline-block;
+        font-family : Inter;
+        width : 100%;
+        color : white;
+        font-size: 1vw;
+        text-align: center;
+        background-image : url("./images/coverPage.png");
+        background-size : cover;
+        padding : 1%;
+    }
+}
